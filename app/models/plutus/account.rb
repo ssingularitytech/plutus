@@ -30,6 +30,7 @@ module Plutus
   #
   # @author Michael Bulat
   class Account < ActiveRecord::Base
+    include NestableModule
     class_attribute :normal_credit_balance
 
     has_many :amounts
