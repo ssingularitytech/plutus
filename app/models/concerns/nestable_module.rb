@@ -32,6 +32,10 @@ module NestableModule
     end
     tree
   end
+  
+  def ancestor_names
+    ancestor_tree.reverse.map(&:name).join(' > ')
+  end
 
   private
 
